@@ -1,0 +1,13 @@
+ThingsPanel PLC4X Service Connector
+Copyright 2026 ThingsPanel Contributors
+
+This product includes software developed for the ThingsPanel project.
+
+This distribution depends on Apache PLC4X / PLC4Go for PLC protocol access.
+
+Apache PLC4X is licensed under the Apache License 2.0:
+https://www.apache.org/licenses/LICENSE-2.0
+
+This NOTICE file is provided for attribution and distribution clarity only and
+does not modify the terms of the Apache License 2.0 that applies to this
+connector distribution.

@@ -1,0 +1,6 @@
+{
+  "tool": "tpctl device-connectors scaffold",
+  "connectorKey": "plc4x-service",
+  "kind": "service",
+  "schemaVersion": 1
+}

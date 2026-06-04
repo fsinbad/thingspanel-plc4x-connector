@@ -1,0 +1,11 @@
+.DS_Store
+
+# Build outputs
+thingspanel-device-connector-plc4x-service
+thingspanel-plc4x-connector
+dist/
+bin/
+
+# Test artifacts
+coverage.out
+*.test

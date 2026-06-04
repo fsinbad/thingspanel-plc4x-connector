@@ -1,0 +1,33 @@
+apiVersion: device-connector/v1alpha1
+kind: DeviceConnectorManifest
+metadata:
+  name: plc4x-service
+  displayName: "PLC4X 接入服务"
+  connectorKey: plc4x-service
+  version: "0.1.0"
+
+spec:
+  image: thingspanel-device-connector-plc4x-service:0.1.0
+  httpPort: 9001
+  healthCheckPath: /health
+  mqttTopicPrefix: "plugin/plc4x-service/"
+  deviceTypeSupport: gateway
+  httpCallbacksEnabled: true
+  additionalInfo:
+    integration_kind: service_access
+    legacy_service_type: 2
+    scaffolded_by: tpctl
+    upstream: apache-plc4x-plc4go
+    supported_modes:
+      - modbus-tcp
+      - modbus-rtu
+      - s7
+      - modbus-ascii
+  envVars:
+    LOG_LEVEL: "info"
+    PLC4X_TELEMETRY_INTERVAL_SECONDS: "10"
+  resources:
+    cpuRequest: "100m"
+    memoryRequest: "64Mi"
+    cpuLimit: "500m"
+    memoryLimit: "256Mi"
